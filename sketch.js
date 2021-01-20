@@ -66,10 +66,12 @@ function setup() {
   obstaclesGroup = new Group();
   
   score = 0;
+  
+  trex.debug = true;
 }
 
 function draw() {
-  trex.debug = true;
+  
   background(255);
   text("Score: "+ score, 500,50);
   text("HI : "+localStorage["HighestScore"],400,50);
