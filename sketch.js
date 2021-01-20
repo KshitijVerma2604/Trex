@@ -67,7 +67,7 @@ function setup() {
   
   score = 0;
   
-  trex.debug = true;
+//   trex.debug = true;
 }
 
 function draw() {
@@ -150,7 +150,7 @@ function spawnObstacles() {
   if(frameCount % 60 === 0) {
     var obstacle = createSprite(600,165,10,40);
     //obstacle.debug = true;
-    obstacle.velocityX = -(6 + 3*score/100);
+    obstacle.velocityX = ground.velocityX;
     
     //generate random obstacles
     var rand = Math.round(random(1,6));
