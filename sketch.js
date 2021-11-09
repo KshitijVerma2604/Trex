@@ -151,7 +151,7 @@ function spawnObstacles() {
   if(frameCount % 60 === 0) {
     var obstacle = createSprite(600,165,10,40);
     //obstacle.debug = true;
-    obstacle.velocityX = ground.velocityX;
+    obstacle.velocityX = -(6 + 3*score/100);
     
     //generate random obstacles
     var rand = Math.round(random(1,6));
